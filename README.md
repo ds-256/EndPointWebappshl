@@ -21,7 +21,7 @@ This project contains two main tools to work with SHL assessments:
 
 ### 🔹 1. SHL Assessment Recommender App
 
-Go to [`shl-assessment-recommender`](./shl-assessment-recommender/) and follow instructions in its README to run the app locally or deploy it.
+Go to [`shl-assessment-recommender`](./webapp/) and follow instructions in its README to run the app locally or deploy it.
 
 ```bash
 cd shl-assessment-recommender
