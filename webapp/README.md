@@ -4,7 +4,7 @@ This app helps users get the most relevant SHL assessments based on a job descri
 
 ## 🚀 Live Demo
 
-Try it on [Hugging Face Spaces](https://huggingface.co/spaces/your-username/your-space-name)  
+Try it on [Hugging Face Spaces](https://huggingface.co/spaces/AnshulS/endpointwebappshl)  
 _or_  
 Run locally with Gradio and FastAPI.
 
@@ -27,7 +27,7 @@ Run locally with Gradio and FastAPI.
 
 1. **Clone this repo**
    ```bash
-   git clone https://github.com/your-username/shl-assessment-recommender.git
+   git clone https://github.com/ds-256/EndPointWebappshl.git
    cd shl-assessment-recommender
 
 
