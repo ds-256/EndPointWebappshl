@@ -215,5 +215,29 @@ import pandas as pd
 
 t1=pd.read_csv('/content/assesments.csv')
 
+import pandas as pd
+
+# Dictionary mapping markers to their respective names
+marker_map = {
+    'C': 'Competencies',
+    'A': 'Ability & Aptitude',
+    'B': 'Biodata & Situational Judgement',
+    'D': 'Development & 360',
+    'E': 'Assessment Exercises',
+    'K': 'Knowledge & Skills',
+    'P': 'Personality & Behavior',
+    'S': 'Simulations'
+}
+def convert_markers_to_names(marker_string):
+    if pd.isna(marker_string):  # Handle NaN values
+        return []
+    
+    markers = marker_string.split('\n')
+    return [marker_map.get(m, m) for m in markers]  # Use get() to handle unknown markers
+
+# Assuming your DataFrame is named 'df' and the column with markers is named 'markers'
+# Replace 'markers' with the actual column name that contains your C\nP\nA\nB values
+t1['Test Type'] = t1['Test Type'].apply(convert_markers_to_names)
+
 t1.columns
 
